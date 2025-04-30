@@ -1,0 +1,38 @@
+﻿<Window x:Class="Activ_ev_2cuat_RubenAF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <DockPanel>
+        <!-- Título general -->
+        <TextBlock Text="Mi Temática de Ejemplo"
+                   FontSize="32"
+                   FontWeight="Bold"
+                   TextAlignment="Center"
+                   DockPanel.Dock="Top"
+                   Background="LightGray"
+                   Padding="20"/>
+
+        <!-- Panel de botones de categorías -->
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
+            <Button Name="btnCategoria1" Content="Categoría 1" Width="120" Margin="5" Click="btnCategoria1_Click"/>
+            <Button Name="btnCategoria2" Content="Categoría 2" Width="120" Margin="5" Click="btnCategoria2_Click"/>
+            <Button Name="btnCategoria3" Content="Categoría 3" Width="120" Margin="5" Click="btnCategoria3_Click"/>
+        </StackPanel>
+
+        <!-- Panel de botones de acciones -->
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Abrir" Width="80" Margin="5" Click="Abrir_Click"/>
+            <Button Content="Guardar" Width="80" Margin="5" Click="Guardar_Click"/>
+            <Button Content="Borrar" Width="80" Margin="5" Click="Borrar_Click"/>
+            <Button Content="Imprimir" Width="80" Margin="5" Click="Imprimir_Click"/>
+        </StackPanel>
+        
+        <!-- FlowDocumentReader -->
+        <FlowDocumentReader Name="flowDocReader" Margin="20" IsFindEnabled="True" IsPrintEnabled="True"/>
+    </DockPanel>
+</Window>
