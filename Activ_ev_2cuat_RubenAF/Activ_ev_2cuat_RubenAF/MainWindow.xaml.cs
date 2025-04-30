@@ -52,7 +52,12 @@ namespace Activ_ev_2cuat_RubenAF
         {
             this.Close();
         }
+        private void Salir_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
+        private void Close_Executed(object sender, ExecutedRoutedEventArgs e) { Application.Current.Shutdown(); }
+        private void Close_CanExecute(object sender, CanExecuteRoutedEventArgs e) { e.CanExecute = true; }
        
      }
     

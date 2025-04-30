@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    
-    <DockPanel>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" Executed="Close_Executed" CanExecute="Close_CanExecute"/>
+    </Window.CommandBindings>
+    <DockPanel>        
         <!-- Título general -->
         <TextBlock Text="Mi Temática de Ejemplo"
                    FontSize="32"
@@ -30,9 +32,12 @@
             <Button Content="Guardar" Width="80" Margin="5" Click="Guardar_Click"/>
             <Button Content="Borrar" Width="80" Margin="5" Click="Borrar_Click"/>
             <Button Content="Imprimir" Width="80" Margin="5" Click="Imprimir_Click"/>
+            <Button Command="ApplicationCommands.Close" Content="Salir" Width="80" Margin="5" Click="Salir_Click"/>
         </StackPanel>
         
+
         <!-- FlowDocumentReader -->
-        <FlowDocumentReader Name="flowDocReader" Margin="20" IsFindEnabled="True" IsPrintEnabled="True"/>
+        <FlowDocumentReader Name="flowDocReader" Margin="20" IsFindEnabled="True" IsPrintEnabled="True" />
     </DockPanel>
+    
 </Window>

@@ -13,3 +13,5 @@ C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenA
 C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Activ_ev_2cuat_RubenAF.csproj.CoreCompileInputs.cache
 C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Activ_ev_2cuat_RubenAF.exe
 C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Activ_ev_2cuat_RubenAF.pdb
+C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Pescadores.g.cs
+C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Pescadores.baml
