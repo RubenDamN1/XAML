@@ -37,7 +37,9 @@
         
 
         <!-- FlowDocumentReader -->
-        <FlowDocumentReader Name="flowDocReader" Margin="20" IsFindEnabled="True" IsPrintEnabled="True" />
+        <FlowDocumentReader Name="flowDocReader" Margin="20" IsFindEnabled="True" IsPrintEnabled="True">
+            
+        </FlowDocumentReader>
     </DockPanel>
     
 </Window>

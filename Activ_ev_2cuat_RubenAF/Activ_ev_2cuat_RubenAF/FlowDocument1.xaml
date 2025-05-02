@@ -1,0 +1,28 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF"
+              ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+    <Paragraph>
+        <TextBlock>lajfdkldasjfl</TextBlock>
+    </Paragraph>
+    <Paragraph>
+        <TextBlock>el segundo parrago</TextBlock>
+    </Paragraph>
+    <Paragraph>
+        <TextBlock>lajfdkldasjfl</TextBlock>
+    </Paragraph>
+    <Paragraph>
+        <TextBlock>el segundo parrago</TextBlock>
+    </Paragraph>
+    <Paragraph>
+        <TextBlock>lajfdkldasjfl</TextBlock>
+    </Paragraph>
+    <Paragraph>
+        <TextBlock>el segundo parrago</TextBlock>
+    </Paragraph>
+    <Paragraph>
+        <TextBlock>lajfdkldasjfl</TextBlock>
+    </Paragraph>
+    <Paragraph>
+        <TextBlock>el segundo parrago</TextBlock>
+    </Paragraph>
+</FlowDocument>

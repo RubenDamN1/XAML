@@ -1,0 +1,8 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF"
+              ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+    <Paragraph>
+        <TextBlock>Bienvenid@ a la página inicial de la actividad evaluable 
+            del segundo cuatrimestre de DESIN de <Bold>Ruben Alvarez</Bold></TextBlock>
+    </Paragraph>
+</FlowDocument>
