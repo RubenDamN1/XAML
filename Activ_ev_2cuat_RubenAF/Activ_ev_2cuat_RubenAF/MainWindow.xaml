@@ -5,42 +5,88 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Topmost="True"
+        Title="La gaceta" Height="600" Width="800">
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Close" Executed="Close_Executed" CanExecute="Close_CanExecute"/>
     </Window.CommandBindings>
-    <DockPanel>        
-        <!-- Título general -->
-        <TextBlock Text="Mi Temática de Ejemplo"
-                   ToolTip="Tiene animación y un trigger doble con MouseOver+Click"
-                   FontSize="32"
-                   FontWeight="Bold"
-                   TextAlignment="Center"
-                   DockPanel.Dock="Top"
-                   Background="LightGray"
-                   Padding="20"/>
-
-        <!-- Panel de botones de categorías -->
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
-            <Button Name="btnCategoria1" Content="Categoría 1" Width="120" Margin="5" Click="btnCategoria1_Click"/>
-            <Button Name="btnCategoria2" Content="Categoría 2" Width="120" Margin="5" Click="btnCategoria2_Click"/>
-            <Button Name="btnCategoria3" Content="Categoría 3" Width="120" Margin="5" Click="btnCategoria3_Click"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Label Background="Aqua" HorizontalContentAlignment="Center" Grid.Row="0">
+            <TextBlock Name="MiTitulo" Text="La Gaceta de la Pesca Cantábrica" ToolTip="Tiene animación y un trigger doble con MouseOver+Click"
+                        FontSize="32" FontWeight="Bold" TextAlignment="Center" Padding="10">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0:0:0.300" Storyboard.TargetProperty="FontSize" To="36"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0:0:0.400" Storyboard.TargetProperty="FontSize" To="32"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>   
+                </TextBlock.Style>
+            </TextBlock>
+            
+        </Label>
+        
+        <StackPanel Grid.Row="1" Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
+            
+            <Button x:Name="btnNoticias" Content="Noticias" Width="120" Margin="5" Click="btnNoticias_Click">
+                <!--<Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Pink"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Orange"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>-->
+            </Button>
+            <Button x:Name="btnPescadores" Content="Pescadores" Width="120" Margin="5" Click="btnPescadores_Click"/>
+            <Button x:Name="btnPrediccion" Content="Prediccion" Width="120" Margin="5" Click="btnPrediccion_Click"/>
         </StackPanel>
-
-        <!-- Panel de botones de acciones -->
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
+        <StackPanel Grid.Row="2"
+            Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
             <Button Content="Abrir" Width="80" Margin="5" Click="Abrir_Click"/>
             <Button Content="Guardar" Width="80" Margin="5" Click="Guardar_Click"/>
             <Button Content="Borrar" Width="80" Margin="5" Click="Borrar_Click"/>
             <Button Content="Imprimir" Width="80" Margin="5" Click="Imprimir_Click"/>
             <Button Command="ApplicationCommands.Close" Content="Salir" Width="80" Margin="5" Click="Salir_Click"/>
         </StackPanel>
-        
-
-        <!-- FlowDocumentReader -->
-        <FlowDocumentReader Name="flowDocReader" Margin="20" IsFindEnabled="True" IsPrintEnabled="True">
-            
+        <FlowDocumentReader Grid.Row="3" Name="flowDocReader" Margin="20" IsFindEnabled="True" IsPrintEnabled="True">
+            <FlowDocument>
+                <Paragraph>
+                    <TextBlock FontSize="16">
+Este es un párrafo con una imagen en línea:
+<InlineUIContainer >
+    <Image HorizontalAlignment="Right" Source="/Images/seeds.png" Width="24" Height="24" Margin="5,0" RenderTransformOrigin="0.5,0.5">                        
+    </Image>
+</InlineUIContainer>
+y el texto continúa después de la imagen.
+                    </TextBlock>
+                </Paragraph>
+            </FlowDocument>
         </FlowDocumentReader>
-    </DockPanel>
+    </Grid>    
     
 </Window>

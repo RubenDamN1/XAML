@@ -37,22 +37,27 @@ namespace Activ_ev_2cuat_RubenAF
                 flowDocReader.Document = documento;
             }
         }
-        private void btnCategoria1_Click(object sender, RoutedEventArgs e)
+        
+        private void btnNoticias_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-        private void btnCategoria2_Click(object sender, RoutedEventArgs e)
+        private void btnPescadores_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-        private void btnCategoria3_Click(object sender, RoutedEventArgs e)
+        private void btnPrediccion_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
         private void Abrir_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.ShowDialog();
+            openFileDialog.Filter = "Archivos xaml | *.xaml";
+            
+            
+            String ruta ;
+            
 
             using (FileStream xamlFile = new FileStream(@"C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\FlowDocument2.xaml", FileMode.Open, FileAccess.Read))
             {
