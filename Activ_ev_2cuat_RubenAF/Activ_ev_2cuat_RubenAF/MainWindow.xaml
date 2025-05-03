@@ -12,6 +12,7 @@
     <DockPanel>        
         <!-- Título general -->
         <TextBlock Text="Mi Temática de Ejemplo"
+                   ToolTip="Tiene animación y un trigger doble con MouseOver+Click"
                    FontSize="32"
                    FontWeight="Bold"
                    TextAlignment="Center"

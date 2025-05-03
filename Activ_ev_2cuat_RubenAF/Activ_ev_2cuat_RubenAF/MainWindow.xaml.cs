@@ -30,7 +30,8 @@ namespace Activ_ev_2cuat_RubenAF
         public MainWindow()
         {
             InitializeComponent();
-            using (FileStream xamlFile = new FileStream(@"C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\PaginaInicial.xaml", FileMode.Open, FileAccess.Read))
+            //using (FileStream xamlFile = new FileStream(@"C:\Users\ruben\OneDrive\Escritorio\Practica XAML\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\PaginaInicial.xaml", FileMode.Open, FileAccess.Read))
+            using (FileStream xamlFile = new FileStream(@"..\..\PaginaInicial.xaml", FileMode.Open, FileAccess.Read))
             {
                 FlowDocument documento = XamlReader.Load(xamlFile) as FlowDocument;
                 flowDocReader.Document = documento;
