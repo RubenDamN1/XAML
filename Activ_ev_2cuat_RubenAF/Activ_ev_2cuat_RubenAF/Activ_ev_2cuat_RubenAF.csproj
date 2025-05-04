@@ -55,14 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="FlowDocument1.xaml">
+    <Content Include="Paginas\Ricky.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="FlowDocument2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Content>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,11 +72,27 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PaginaInicial.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
+    <Content Include="Paginas\Jandro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Content>
+    <Content Include="Paginas\PaginaInicial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\Jandro.xaml.cs">
+      <DependentUpon>Jandro.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Paginas\Ricky.xaml.cs">
+      <DependentUpon>Ricky.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -108,7 +120,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Resource Include="Images\seeds.png" />
+    <Resource Include="Images\Jandro\Jandro1.png" />
+    <Resource Include="Images\Jandro\Jandro2.png" />
+    <Resource Include="Images\Ricky\Ricky1.png" />
+    <Resource Include="Images\Ricky\Ricky2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

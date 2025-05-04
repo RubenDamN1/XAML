@@ -51,16 +51,7 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
             
             <Button x:Name="btnNoticias" Content="Noticias" Width="120" Margin="5" Click="btnNoticias_Click">
-                <!--<Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="Pink"/>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Orange"/>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>-->
+                
             </Button>
             <Button x:Name="btnPescadores" Content="Pescadores" Width="120" Margin="5" Click="btnPescadores_Click"/>
             <Button x:Name="btnPrediccion" Content="Prediccion" Width="120" Margin="5" Click="btnPrediccion_Click"/>
@@ -77,12 +68,7 @@
             <FlowDocument>
                 <Paragraph>
                     <TextBlock FontSize="16">
-Este es un párrafo con una imagen en línea:
-<InlineUIContainer >
-    <Image HorizontalAlignment="Right" Source="/Images/seeds.png" Width="24" Height="24" Margin="5,0" RenderTransformOrigin="0.5,0.5">                        
-    </Image>
-</InlineUIContainer>
-y el texto continúa después de la imagen.
+                       primer parrafo
                     </TextBlock>
                 </Paragraph>
             </FlowDocument>

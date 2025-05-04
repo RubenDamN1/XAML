@@ -1,0 +1,80 @@
+﻿<Page x:Class="Activ_ev_2cuat_RubenAF.Paginas.Jandro"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF.Paginas"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Jandro">
+
+    <Grid>
+        <FlowDocumentPageViewer>
+            <FlowDocument>
+                <Paragraph>
+                    Cuento breve recomendado 1: “El espejo chino”
+                </Paragraph>
+                <BlockUIContainer>
+                    <Image Source="/Images/Jandro/Jandro1.png" Width="100" />
+                </BlockUIContainer>
+                <Paragraph>
+                    Un campesino chino se fue a la ciudad para vender la cosecha de arroz y su mujer le pidió que no 
+se olvidase de traerle un peine.
+Después de vender su arroz en la ciudad, el campesino se reunió con unos compañeros, y bebieron y lo 
+celebraron largamente. Después, un poco confuso, en el momento de regresar, se acordó de que su mujer le 
+había pedido algo, pero ¿qué era? No lo podía recordar. Entonces compró en una tienda para mujeres lo 
+primero que le llamó la atención: un espejo. Y regresó al pueblo.
+Entregó el regalo a su mujer y se marchó a trabajar sus campos. La mujer se miró en el espejo y comenzó a 
+llorar desconsoladamente. La madre le preguntó la razón de aquellas lágrimas.
+La mujer le dio el espejo y le dijo:
+-Mi marido ha traído a otra mujer, joven y hermosa.
+La madre cogió el espejo, lo miró y le dijo a su hija:
+-No tienes de qué preocuparte, es una vieja.
+                </Paragraph>
+                <Paragraph>
+                    Cuento breve recomendado 2: “La montaña”
+                    <InlineUIContainer BaselineAlignment="Center">
+                        <Image Source="/Images/Jandro/Jandro2.png" Height="40" />
+                    </InlineUIContainer>
+                </Paragraph>
+                <Paragraph>
+                    El niño empezó a trepar por el corpachón de su padre, que estaba amodorrado en la butaca, en medio de la 
+gran siesta, en medio del gran patio. Al sentirlo, el padre, sin abrir los ojos y sotorriéndose, se puso todo duro 
+para ofrecer al juego del hijo una solidez de montaña. Y el niño lo fue escalando: se apoyaba en las 
+estribaciones de las piernas, en el talud del pecho, en los brazos, en los hombros, inmóviles como rocas. 
+Cuando llegó a la cima nevada de la cabeza, el niño no vio a nadie.
+-¡Papá, papá! -llamó a punto de llorar.
+Un viento frío soplaba allá en lo alto, y el niño, hundido en la nieve, quería caminar y no podía.
+-¡Papá, papá!
+El niño se echó a llorar, solo sobre el desolado pico de la montaña.
+                </Paragraph>
+                <Paragraph>
+                    Cuento breve recomendado 3: “La tristeza”
+                </Paragraph>
+                <Paragraph>
+                    <Floater HorizontalAlignment="Left" Width="200">
+                       
+                        <BlockUIContainer>
+                            <Image Source="/Images/Jandro/Jandro1.png" />
+                        </BlockUIContainer>
+                    </Floater>
+                    El profe me ha dado una nota para mi madre. La he leído. Dice que necesita hablar con ella porque 
+yo estoy mal. Se la he puesto en la mesilla, debajo del tazón lleno de leche que le dejé por la mañana.
+                </Paragraph>
+                <Paragraph>
+                    He metido en el microondas la tortilla congelada que compré en el supermercado y me he 
+comido la mitad. La otra mitad la puse en un plato en la mesilla, al lado del tazón de leche. Mi madre sigue 
+igual, con los ojos rojos que miran sin ver y el pelo, que ya no brilla, desparramado sobre la almohada. Huele a 
+sudor la habitación, pero cuando abrí la persiana ella me gritó. Dice que si no se ve el sol es como si no 
+corriesen los días, pero eso no es cierto. Yo sé que los días corren porque la lavadora está llena de ropa sucia 
+y en el lavavajillas no cabe nada más, pero sobre todo lo sé por la tristeza que está encima de los muebles. La 
+tristeza es un polvo blanco que lo llena todo. Al principio es divertida. Se puede escribir sobre ella, “tonto el 
+que lo lea”, pero, al día siguiente, las palabras no se ven porque hay más tristeza sobre ellas. El profesor dice 
+que estoy mal porque en clase me distraigo y es que no puedo dejar de pensar que un día ese polvo blanco 
+cubrirá del todo a mi madre y lo hará conmigo. Y cuando mi padre vuelva, la tristeza habrá borrado el “te 
+quiero” que le escribo cada noche sobre la mesa del comedor.
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentPageViewer>
+    </Grid>
+</Page>

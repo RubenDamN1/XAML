@@ -30,8 +30,7 @@ namespace Activ_ev_2cuat_RubenAF
         public MainWindow()
         {
             InitializeComponent();
-            //using (FileStream xamlFile = new FileStream(@"C:\Users\ruben\OneDrive\Escritorio\Practica XAML\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\PaginaInicial.xaml", FileMode.Open, FileAccess.Read))
-            using (FileStream xamlFile = new FileStream(@"..\..\PaginaInicial.xaml", FileMode.Open, FileAccess.Read))
+            using (FileStream xamlFile = new FileStream(@"../../Paginas/PaginaInicial.xaml", FileMode.Open, FileAccess.Read))
             {
                 FlowDocument documento = XamlReader.Load(xamlFile) as FlowDocument;
                 flowDocReader.Document = documento;
@@ -40,42 +39,31 @@ namespace Activ_ev_2cuat_RubenAF
         
         private void btnNoticias_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            
         }
         private void btnPescadores_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            
         }
         private void btnPrediccion_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+           
         }
         private void Abrir_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Archivos xaml | *.xaml";
-            
-            
-            String ruta ;
-            
-
-            using (FileStream xamlFile = new FileStream(@"C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\FlowDocument2.xaml", FileMode.Open, FileAccess.Read))
-            {
-                FlowDocument documento = XamlReader.Load(xamlFile) as FlowDocument;
-                flowDocReader.Document = documento;
-            }
+            CargarArticulo();
         }
         private void Guardar_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+           
         }
         private void Borrar_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+           
         }
         private void Imprimir_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            
         }
         private void Salir_Click(object sender, RoutedEventArgs e)
         {
@@ -83,6 +71,41 @@ namespace Activ_ev_2cuat_RubenAF
         }
         private void Close_Executed(object sender, ExecutedRoutedEventArgs e) { Application.Current.Shutdown(); }
         private void Close_CanExecute(object sender, CanExecuteRoutedEventArgs e) { e.CanExecute = true; }
+
+        //metodo para cargar un articulo
+        private void CargarArticulo()
+        {
+            FlowDocument contenido = null;
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Archivos FlowDocument (*.xaml)|*.xaml";
+
+            if (openFile.ShowDialog() == true)
+            {
+                FileStream archivoXaml = openFile.OpenFile() as FileStream;
+                if (archivoXaml == null) return;
+                else
+                {
+                    try
+                    {
+                        contenido = XamlReader.Load(archivoXaml) as FlowDocument;
+                        if (contenido == null)
+                            throw (new System.Windows.Markup.XamlParseException("The specified file could not be loaded as a FlowDocument."));
+                    }
+                    catch (Exception e) 
+                    {
+                        String error = "Hubo un problema cargando el archivo\n\n";                        
+                        error += openFile.FileName;
+                        error += "\nDetalles:\n\n";
+                        error += e.Message;
+                        System.Windows.MessageBox.Show(error);
+                        return;
+                    }
+                    flowDocReader.Document = contenido;
+                }
+            }
+            
+            
+        }
        
      }
     

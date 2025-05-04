@@ -2,6 +2,7 @@
               xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF"
               ColumnWidth="400" FontSize="14" FontFamily="Georgia">
     <Paragraph>
-        <TextBlock>este es el block2</TextBlock>
+        <TextBlock>Bienvenid@ a la página inicial de la actividad evaluable 
+            del segundo cuatrimestre de DESIN de <Bold>Ruben Alvarez</Bold></TextBlock>
     </Paragraph>
 </FlowDocument>
