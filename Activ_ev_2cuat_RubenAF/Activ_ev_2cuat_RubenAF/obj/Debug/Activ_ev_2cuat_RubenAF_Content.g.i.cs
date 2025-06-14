@@ -8,8 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("paginas/ricky.xaml")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("paginas/jandro.xaml")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("paginas/paginainicial.xaml")]
 
 

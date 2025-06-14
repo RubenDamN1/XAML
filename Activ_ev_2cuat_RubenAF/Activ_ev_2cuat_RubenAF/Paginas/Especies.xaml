@@ -1,0 +1,16 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF.Paginas"
+              ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+    <Paragraph>
+        La lubina, lobina, róbalo, robalo, robaliza o roballiza ​(Dicentrarchus labrax) es una especie de pez perciforme de la familia Moronidae. 
+        Habita en el mar Mediterráneo y el océano Atlántico, desde las costas africanas (Senegal) hasta Noruega. Este pescado blanco es muy apreciado por su valor culinario y en la pesca deportiva.​
+
+A lo largo de la costa del Adriático, ha recibido aproximadamente una treintena de nombres similares y diferentes. El nombre más común es 'lubin', una palabra de origen latino que proviene de la palabra 'lupus', que significa 'lobo'. Entre los nombres más frecuentes se encuentran agač, levrek, brancin, dut, luben, smudut, y el perche marino, entre otros.
+    </Paragraph>
+    <Paragraph>
+        chopa
+    </Paragraph>
+    <Paragraph>
+        chipiron
+    </Paragraph>
+</FlowDocument>

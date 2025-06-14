@@ -2,6 +2,6 @@
               xmlns:local="clr-namespace:Activ_ev_2cuat_RubenAF.Paginas"
               ColumnWidth="400" FontSize="14" FontFamily="Georgia">
     <Paragraph>
-        <TextBlock>Este es Alejandro</TextBlock>
+        Pescador Ruben
     </Paragraph>
 </FlowDocument>

@@ -32,7 +32,9 @@ C:\Users\ruben\OneDrive\Escritorio\Practica XAML\XAML\Activ_ev_2cuat_RubenAF\Act
 C:\Users\ruben\OneDrive\Escritorio\Practica XAML\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Activ_ev_2cuat_RubenAF.csproj.CoreCompileInputs.cache
 C:\Users\ruben\OneDrive\Escritorio\Practica XAML\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Activ_ev_2cuat_RubenAF.exe
 C:\Users\ruben\OneDrive\Escritorio\Practica XAML\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Activ_ev_2cuat_RubenAF.pdb
-C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Activ_ev_2cuat_RubenAF_Content.g.cs
-C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Paginas\PaginaInicial.baml
-C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Paginas\Jandro.baml
+C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Activ_ev_2cuat_RubenAF.exe.config
 C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Paginas\Ricky.baml
+C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Paginas\Ruben.baml
+C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Paginas\Jandro.baml
+C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Paginas\PaginaInicial.baml
+C:\Users\Ruben Alvarez\Desktop\XAML\Activ_ev_2cuat_RubenAF\Activ_ev_2cuat_RubenAF\obj\Debug\Paginas\Especies.baml

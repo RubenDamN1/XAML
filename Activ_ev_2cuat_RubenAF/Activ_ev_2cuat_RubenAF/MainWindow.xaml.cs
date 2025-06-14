@@ -59,54 +59,50 @@ namespace Activ_ev_2cuat_RubenAF
         }
         private void Borrar_Click(object sender, RoutedEventArgs e)
         {
-           
+            flowDocReader.Document = null;
         }
         private void Imprimir_Click(object sender, RoutedEventArgs e)
         {
             
         }
-        private void Salir_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
         private void Close_Executed(object sender, ExecutedRoutedEventArgs e) { Application.Current.Shutdown(); }
         private void Close_CanExecute(object sender, CanExecuteRoutedEventArgs e) { e.CanExecute = true; }
 
         //metodo para cargar un articulo
         private void CargarArticulo()
         {
-            FlowDocument contenido = null;
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.Filter = "Archivos FlowDocument (*.xaml)|*.xaml";
 
             if (openFile.ShowDialog() == true)
             {
-                FileStream archivoXaml = openFile.OpenFile() as FileStream;
-                if (archivoXaml == null) return;
-                else
+                using (FileStream archivoXaml = openFile.OpenFile() as FileStream)
                 {
+                    if (archivoXaml == null) return;
+
                     try
                     {
-                        contenido = XamlReader.Load(archivoXaml) as FlowDocument;
+                        ParserContext context = new ParserContext();
+                        context.BaseUri = new Uri(openFile.FileName, UriKind.Absolute);
+                        FlowDocument contenido = XamlReader.Load(archivoXaml, context) as FlowDocument;
+
                         if (contenido == null)
-                            throw (new System.Windows.Markup.XamlParseException("The specified file could not be loaded as a FlowDocument."));
+                            throw new System.Windows.Markup.XamlParseException("El archivo especificado no es un FlowDocument válido.");
+
+                        flowDocReader.Document = contenido;
                     }
-                    catch (Exception e) 
+                    catch (Exception e)
                     {
-                        String error = "Hubo un problema cargando el archivo\n\n";                        
+                        string error = "Hubo un problema cargando el archivo\n\n";
                         error += openFile.FileName;
                         error += "\nDetalles:\n\n";
                         error += e.Message;
                         System.Windows.MessageBox.Show(error);
-                        return;
                     }
-                    flowDocReader.Document = contenido;
                 }
             }
-            
-            
         }
-       
-     }
+    }
     
 }
